@@ -268,6 +268,7 @@ int main()
         }
         case 8:
         {
+            Pais paises;
             FileManage<Pais> fileManage;
             fileManage.ReadFile("paises.dat");
 			break;
@@ -275,6 +276,7 @@ int main()
              
 		case 9:
 		{
+			Ciudad ciudades;
 			FileManage<Ciudad> fileManage;
 			fileManage.ReadFile("ciudades.dat");
 		}
@@ -299,7 +301,7 @@ int main()
             FileManage<Pais> fileManage;
             Pais pais = fileManage.getObjectByID(cod, "paises.dat");
             pais.mostrar();
-        }
+		}
             break;
         case 0:
             cout << "Saliendo..." << endl;
